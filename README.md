@@ -1,2 +1,12 @@
-# Technical-Documentation-Page
-A clean technical documentation page with a sidebar, responsive layout, and structured content.
+# Technical Documentation Page
+
+A simple technical documentation layout inspired by MDN-style docs.
+
+## Features
+- Sidebar navigation
+- Responsive design
+- Well-structured section layout
+
+## Tech Stack
+- HTML
+- CSS
