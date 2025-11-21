@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header>C Documentation</header>
+        <ul>
+          <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+          <li><a class="nav-link" href="#What_You_Should_Already_Know">What You Should Already Know</a></li>
+          <li><a class="nav-link" href="#Why_Learn_C?">Why Learn C?</a></li>
+          <li><a class="nav-link" href="#Hello_World_Example">Hello World Example</a></li>
+          <li><a class="nav-link" href="#Structure_of_a_C_Program">Structure of a C Program</a></li>
+          <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+          <li><a class="nav-link" href="#Control_Structures">Control Structures</a></li>
+          <li><a class="nav-link" href="#Functions">Functions</a></li>
+          <li><a class="nav-link" href="#Pointers">Pointers</a></li>
+          <li><a class="nav-link" href="#Arrays">Arrays</a></li>
+          <li><a class="nav-link" href="#Structures">Structures</a></li>
+          <li><a class="nav-link" href="#File_Handling">File Handling</a></li>
+          <li><a class="nav-link" href="#Memory_Management">Memory Management</a></li>
+          <li><a class="nav-link" href="#Best_Practices">Best Practices</a></li>
+          <li><a class="nav-link" href="#Conclusion">Conclusion</a></li>
+        </ul>
+      </nav>
+      <div id="documentation_body">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>C is a general-purpose, procedural programming language developed by Dennis Ritchie in 1972 at Bell Labs. Known for its efficiency and flexibility, C is widely used in system programming, embedded systems, and application development. It serves as the foundation for many other programming languages like C++, Java, and Python.</p>
+      </section>
+      <section class="main-section" id="What_You_Should_Already_Know">
+        <header>What You Should Already Know</header>
+        <p>Before starting with C, it is recommended that you have:</p>
+        <ul>
+          <li><b>Basic Programming Concepts</b>: Understanding variables, loops, and functions.</li>
+          <li><b>Problem-Solving Skills</b>: Ability to break down tasks into smaller steps.</li>
+          <li><b>Basic Knowledge of Computers</b>: Familiarity with compilers and text editors.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Why_Learn_C?">
+        <header>Why Learn C?</header>
+        <ul>
+          <li><b>Performance</b>: C provides low-level access to memory and efficient execution.</li>
+          <li><b>Portability</b>: Programs written in C can run on various platforms with minimal changes.</li>
+          <li><b>Foundation</b>: Many modern languages derive their syntax and concepts from C.</li>
+          <li><b>Versatility</b>: C is used for system programming, embedded systems, game development, and more.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Hello_World_Example">
+        <header>Hello World Example</header>
+        <p>A simple program to print "Hello, World!" in C:<br>
+          <div>
+            <code>#include < stdio.h><br>
+<br>
+int main() {<br>
+    printf("Hello, World!\n");<br>
+    return 0;<br>
+}<br>
+<br>
+            </code>
+          </div>
+        </p>
+      </section>
+      <section class="main-section" id="Structure_of_a_C_Program">
+        <header>Structure of a C Program</header>
+        <p>A C program typically includes the following components:</p>
+        <ol>
+          <li><b>Preprocessor Directives<b>: Statements starting with <code>#</code>, such as <code>#include</code> and <code>#define</code>.</li>
+          <li><b>Main Function</b>: Entry point of the program, defined as <code>int main()</code>.</li>
+          <li><b>Statements and Expressions</b>: Executable instructions.</li>
+          <li><b>Return Statement</b>: Indicates the end of the program.</li>
+        </ol>
+        <p>Example:<br>
+          <div>
+            <code>#include < stdio.h><br>
+<br>
+int main() {<br>
+    int number = 10; // Variable declaration<br>
+    printf("Number is: %d\n", number);<br>
+    return 0;<br>
+}<br>
+<br>
+            </code>
+          </div>
+        </p>
+      </section>
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <p>C provides various data types to define variables and constants:</p>
+        <ul>
+          <li><b>Basic Types</b>: <code>int</code>, <code>float</code>, <code>double</code>, <code>char</code>.</li>
+          <li><b>Derived Types</b>: <code>array</code>, <code>pointer</code>, <code>struct</code>, <code>union</code>.</li>
+          <li><b>Void</b>: Represents no type.</li>
+        </ul>
+        <p>Example of declaring variables:<br>
+          <div>
+            <code>int age = 25;<br>
+float height = 5.9;<br>
+char grade = 'A';<br>
+<br>
+            </code>
+          </div>
+        </p>
+      </section>
+      <section class="main-section" id="Control_Structures">
+        <header>Control Structures</header>
+        <p>C supports control flow constructs to manage program execution:</p>
+        <ol>
+          <li><b>Conditional Statements</b>: <code>if</code>, <code>else</code>, <code>switch</code>.</li>
+          <li><b>Loops</b>: <code>for</code>, <code>while</code>, <code>do-while</code>.</li>
+          <li><b>Jump Statements</b>: <code>break</code>, <code>continue</code>, <code>goto</code>.</li>
+        </ol>
+        <p>Example of a loop:<br>
+          <div>
+            <code>for (int i = 0; i < 5; i++) {<br>
+    printf("Iteration %d\n", i);<br>
+}<br>
+<br>
+            </code>
+          </div>
+        </p>
+      </section>
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+        <p>Functions in C allow modular programming by encapsulating reusable code.</p>
+        <ul>
+          <li>
+            <p>Syntax:<br>
+              <div>
+                <code>return_type function_name<br>(parameters) {<br>
+    // function body<br>
+}<br>
+<br>
+                </code>
+              </div>
+            </p>
+          </li>
+          <li>
+            <p>Example:<br>
+              <div>
+                <code>int add(int a, int b) {<br>
+    return a + b;<br>
+}<br>
+<br>
+                </code>
+              </div>
+            </p>
+          </li>
+          <li>
+            <p>Usage:<br>
+              <div>
+                <code>int result = add(5, 3);<br>
+printf("Result: %d\n", result);<br>
+<br>
+                </code>
+              </div>
+            </p>
+          </li>
+      </section>
+      <section class="main-section" id="Pointers">
+        <header>Pointers</header>
+        <p>Pointers are variables that store memory addresses. They are a powerful feature in C, enabling dynamic memory management and efficient array manipulation.</p>
+        <p>Example of a pointer:<br>
+          <div>
+            <code>int num = 10;<br>
+int *ptr = &num;<br>
+<br>
+printf("Value of num: %d\n", *ptr); //<br>
+Dereferencing<br>
+<br>
+            </code>
+          </div>
+        </p>
+      </section>
+      <section class="main-section" id="Arrays">
+        <header>Arrays</header>
+        <p>Arrays store multiple elements of the same type in contiguous memory locations.</p>
+        <p>Example:<br>
+          <div>
+            <code>int numbers[5] = {1, 2, 3, 4, 5};<br>
+for (int i = 0; i < 5; i++) {<br>
+    printf("%d\n", numbers[i]);<br>
+}<br>
+<br>
+            </code>
+          </div>
+        </p>
+      </section>
+      <section class="main-section" id="Structures">
+        <header>Structures</header>
+        <p>Structures allow grouping of different data types under one name.</p>
+        <p>Example:<br>
+          <div>
+            <code>struct Student {<br>
+    int id;<br>
+    char name[50];<br>
+    float grade;<br>
+};<br>
+<br>
+struct Student s1 = {1, "Alice", 92.5};<br>
+printf("Name: %s, Grade: %.2f\n", s1.name, s1.grade);<br>
+<br>
+            </code>
+          </div>
+        </p>
+      </section>
+      <section class="main-section" id="File_Handling">
+        <header>File Handling</header>
+        <p>C provides functions for reading from and writing to files.</p>
+        <p>Example:<br>
+          <div>
+            <code>FILE *fptr = fopen("example.txt", "w");<br>
+fprintf(fptr, "Hello, File!");<br>
+fclose(fptr);<br>
+<br>
+            </code>
+          </div>
+        </p>
+      </section>
+      <section class="main-section" id="Memory_Management">
+        <header>Memory Management</header>
+        <p>Dynamic memory allocation is managed using functions like <code>malloc</code>, <code>calloc</code>, <code>realloc</code>, and <code>free</code>.</p>
+        <p>Example:<br>
+          <div>
+            <code>int *ptr = (int *)malloc(5 * sizeof(int));<br>
+if (ptr == NULL) {<br>
+    printf("Memory not allocated.\n");<br>
+} else {<br>
+    // Use memory<br>
+    free(ptr); // Free memory<br>
+}<br>
+<br>
+            </code>
+          </div>
+        </p>
+      </section>
+      <section class="main-section" id="Best_Practices">
+        <header>Best Practices</header>
+        <ul>
+          <li>Always initialize variables.</li>
+          <li>Use comments to explain your code.</li>
+          <li>Check for null pointers before accessing memory.</li>
+          <li>Use consistent indentation for better readability.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Conclusion">
+        <header>Conclusion</header>
+        <p>C remains a vital language in the programming world due to its power and efficiency. Mastering C can build a strong foundation for learning advanced programming languages and concepts.</p>
+        <p>For more information, refer to the official <a href="https://devdocs.io/c/" target="_blank">C Documentation</a>.</p>
+      </section>
+      </div>
+    </main>
+  </body>
+</html>

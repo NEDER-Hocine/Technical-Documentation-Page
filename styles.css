@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(48, 48, 68);
+  color: rgb(224, 224, 230);
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+}
+
+main {
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  color: white;
+  font-style: bold;
+  font-size: 25px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 25%;
+  height: 100%;
+  border-right: 7px solid rgb(84, 84, 101);
+  overflow: auto;
+}
+
+nav header {
+  text-align: center;
+  padding: 10px;
+}
+
+nav header {
+  padding-top: 30px;
+}
+
+nav li {
+  background-color: rgb(48, 48, 68);
+}
+
+#documentation_body {
+  margin-left: auto;
+  width: 75%;
+  padding: 0 40px;
+}
+
+section header {
+  margin-top: 50px;
+  margin-left: -20px;
+}
+
+li {
+  margin: 30px 0;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  color: rgb(48, 48, 68);
+  margin: 0px;
+  padding: 15px;
+  border-bottom: 1px solid rgb(84, 84, 101);
+}
+
+nav li:first-of-type {
+  border-top: 1px solid rgb(84, 84, 101);
+}
+
+a, a:active, a:hover, a:visited {
+  color: rgb(224, 224, 230);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(226, 138, 6);
+}
+
+code {
+  background-color: rgb(30, 29, 51);
+  border: 1px solid rgb(173, 173, 179);
+  padding: 1px;
+}
+
+section div  {
+  width: 100%;
+  max-width: 700px;
+  background-color: rgb(30, 29, 51);
+  border: 1px solid rgb(173, 173, 179);
+  padding-left: 10px; 
+}
+
+section div code {
+  border: none;
+}
+section a , section a:visited, section a:active {
+  color: rgb(137, 129, 140);
+} 
+
+section a:hover {
+  color: rgb(226, 138, 6);
+}
+
+@media (max-width: 950px) {
+  nav {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 310px; 
+    border-right: none;
+  }
+
+  nav ul {
+    border-top: 5px solid rgb(84, 84, 101) ;
+    border-bottom: 5px solid rgb(84, 84, 101) ;
+  }
+
+  #documentation_body {
+    margin-left: 0;
+    width: 100%;
+  }
+}
